@@ -80,6 +80,9 @@ body:not(.campus-champions) .campus-champions{
 body:not(.open-ondemand) .open-ondemand {
   display: none !important;
 }
+body:not(.pa-science) .pa-science {
+  display: none !important;
+}
 
 .wrapper {
   flex: 1 0 auto;
