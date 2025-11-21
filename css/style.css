@@ -900,6 +900,14 @@ footer .list-inline {
   color: var(--footer-text);
   background: var(--footer-background);
 }
+
+.footer h2 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
 .footer .footer-main .row .col {
   margin-bottom: 1.5rem;
   padding: 0.5rem 1.5rem;
