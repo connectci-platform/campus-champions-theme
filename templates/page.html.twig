@@ -123,6 +123,7 @@
             pagePath == '/affinity-groups' or
             pagePath == '/people' or
             pagePath == '/mentorships' or
+            pagePath == '/current-champions' or
             pagePath == '/events' %}
         {% set sidebar_first_classes = "sidebar order-1 order-lg-1 col-lg-3 mx-auto" %}
       {% endif %}
@@ -134,13 +135,17 @@
             pagePath == '/affinity-groups' or
             pagePath == '/people' or
             pagePath == '/mentorships' or
+            pagePath == '/current-champions' or
             pagePath == '/events' %}
         {% set main_wrapper_classes = "main-content order-2 order-lg-2 col-lg-9 col-12 mx-auto" %}
       {% endif %}
     {% endif %}
     <main class="container{% if is_front %} main-container front{% endif %}">
-      {% if is_front %}
+      <div>
         {{ page.title_area }}
+        {{ page.below_title_page_top }}
+      </div>
+      {% if is_front %}
         {% if page.campus_champions_front_header %}
           <div class="hero">
             {{ page.campus_champions_front_header }}
@@ -174,8 +179,6 @@
         <div class="row{% if page.title_area %} mt-0 {% else %} mt-4 {% endif %}">
         {% if page.primary_sidebar or page.secondary_sidebar %}
           <div class="{{ main_wrapper_classes }}">
-            {{ page.page_top }}
-            {{ page.title_area }}
             {{ page.view_type_buttons }}
             {{ page.drupal_tabs }}
             {{ page.exposed_filters }}
@@ -208,8 +211,6 @@
           {% endif %}
         {% else %}
           <div class="col-12 mx-auto">
-            {{ page.page_top }}
-            {{ page.title_area }}
             {{ page.view_type_buttons }}
             {{ page.drupal_tabs }}
             {{ page.exposed_filters }}
