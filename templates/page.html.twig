@@ -50,7 +50,7 @@
 <div class="wrapper">
   <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
     {% block navbar %}
-    <nav class="navbar navbar-expand secondary-nav navbar-light bg-light" id="secondaryNav">
+    <nav class="navbar navbar-expand secondary-nav navbar-light bg-light" id="secondaryNav" role="navigation" aria-label="Secondary">
       <div class="container flex-wrap justify-content-around">
         <!-- <div class="row" id="secondaryNavbarResponsive"> -->
           <div class="flex-grow-1">
@@ -96,7 +96,7 @@
       </div>
     </header>
 
-    <nav class="navbar fixed-to navbar-expand-lg navbar-light p-0" id="mainNav" aria-label="Main Navigation">
+    <nav class="navbar fixed-to navbar-expand-lg navbar-light p-0" id="mainNav" role="navigation" aria-label="Main">
       <div class="container">
         <a class="navbar-brand" href="/">
           <img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/campus-champions-full-logo-white.svg') }}" class="logo" alt="{{ site_name }}" />
