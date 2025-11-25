@@ -102,6 +102,7 @@ h2 {
   font-weight: 400;
 }
 a {
+  font-weight: 600;
   color: var(--link);
   transition: all 0.25s;
   text-decoration: none;
