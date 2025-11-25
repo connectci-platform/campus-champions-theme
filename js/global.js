@@ -9,7 +9,7 @@
 
   Drupal.behaviors.nect = {
     attach: function (context, settings) {
-
+      $('.campus-champions .hide-campus-champions').remove();
     }
   };
 
