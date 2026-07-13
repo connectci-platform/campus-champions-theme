@@ -1,5 +1,5 @@
 {
-    "name": "necyberteam/campus-champions-theme",
+    "name": "connectci/campus-champions-theme",
     "description": "A custom theme for the Campus Champions site.",
     "type": "drupal-theme",
     "license": "Apache License, Version 2.0",
@@ -10,8 +10,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/necyberteam/campus-champions-theme/issues",
-        "source": "https://github.com/necyberteam/campus-champions-theme"
+        "issues": "https://github.com/connectci-platform/campus-champions-theme/issues",
+        "source": "https://github.com/connectci-platform/campus-champions-theme"
     },
     "minimum-stability": "dev"
 }
