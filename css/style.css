@@ -2103,6 +2103,27 @@ body:not(.open-ondemand) .open-ondemand {
   display: none !important;
 }
 
+.private {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+}
+
+.private.bg {
+  border-left: 50px solid transparent;
+  border-top: 50px solid var(--primary);
+}
+
+.private.icon {
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 1rem;
+  z-index: 1000;
+  pointer-events: none;
+}
+
 #block-champions-views-block-badges-block-1 img {
   width: 120px;
   height: auto;
