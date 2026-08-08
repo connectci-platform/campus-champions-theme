@@ -2375,3 +2375,15 @@ details.vertical-tabs__pane > .details-wrapper {
   padding: 0.2em 0.5em;
   cursor: pointer;
 }
+
+/* /tags sidebar */
+#block-champions-views-block-node-add-tags-block-3 {
+  a {
+    font-size: .85em;
+    color: #000;
+    margin-bottom: 0.5em;
+  }
+  a:hover {
+    color: var(--link);
+  }
+}
