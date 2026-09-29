@@ -2357,3 +2357,15 @@ details.vertical-tabs__pane > .details-wrapper {
     color: var(--link);
   }
 }
+
+#block-ccfronttacklinggrandchallenges img {
+  margin-bottom: 1rem;
+}
+
+.page-node-24 .views-row img,
+#cc-find img,
+#block-ccfronttacklinggrandchallenges img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
