@@ -1,9 +1,10 @@
 (function($) {
   "use strict"; // Start of use strict
+  var $bs = window.jQueryBootstrap || $; // Legacy jQuery instance that Bootstrap 4 is bound to.
 
   $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-toggle="popover"]').popover();
+    $bs('[data-toggle="tooltip"]').tooltip();
+    $bs('[data-toggle="popover"]').popover();
   });
 
   // Floating label headings for the contact form
@@ -66,7 +67,7 @@
   }*/
 
 $(document).ready(function() {
-  $("#projectSlider").on("slide.bs.carousel", function(e) {
+  $bs("#projectSlider").on("slide.bs.carousel", function(e) {
     var $e = $(e.relatedTarget);
     var idx = $e.index();
     var itemsPerSlide = 3;
@@ -84,7 +85,7 @@ $(document).ready(function() {
       }
     }
   });
-  $("#studentSlider").on("slide.bs.carousel", function(e) {
+  $bs("#studentSlider").on("slide.bs.carousel", function(e) {
     var $e = $(e.relatedTarget);
     var idx = $e.index();
     var itemsPerSlide = 5;
@@ -102,7 +103,7 @@ $(document).ready(function() {
       }
     }
   });
-  $("#mentorSlider").on("slide.bs.carousel", function(e) {
+  $bs("#mentorSlider").on("slide.bs.carousel", function(e) {
     var $e = $(e.relatedTarget);
     var idx = $e.index();
     var itemsPerSlide = 3;
@@ -120,7 +121,7 @@ $(document).ready(function() {
       }
     }
   });
-  $("#researcherSlider").on("slide.bs.carousel", function(e) {
+  $bs("#researcherSlider").on("slide.bs.carousel", function(e) {
     var $e = $(e.relatedTarget);
     var idx = $e.index();
     var itemsPerSlide = 3;
